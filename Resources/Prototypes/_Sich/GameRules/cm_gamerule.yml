@@ -1,0 +1,11 @@
+- type: entity
+  id: SichEvent
+  parent: CMDistressSignal
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: CMDistressSignalRule
+    requireXenoPlayers: false # не треба готові ксено
+    spawnXenos: false         # готових ксено не заспавнить
+    spawnSurvivors: false     # готових виживших не заспавнить
+    roundEndCheckDelay: 10800 # перша перевірка чи живі ксено/морпіхи відбудеться 3 години після старту раунду
+    squadIds: ["SquadDelta"] # один загін

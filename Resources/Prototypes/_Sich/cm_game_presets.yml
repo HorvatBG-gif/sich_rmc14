@@ -1,0 +1,9 @@
+- type: gamePreset
+  id: SichEventPreset
+  alias:
+  - event
+  name: Івентовий режим
+  showInVote: false
+  description: "Режим гри для івентів"
+  rules:
+  - SichEvent
