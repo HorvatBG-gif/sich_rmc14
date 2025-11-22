@@ -2,8 +2,8 @@
   id: SichEventPreset
   alias:
   - event
-  name: Івентовий режим
+  name: sich-event-preset-title
+  description: sich-event-preset-description
   showInVote: false
-  description: "Режим гри для івентів"
   rules:
   - SichEvent
