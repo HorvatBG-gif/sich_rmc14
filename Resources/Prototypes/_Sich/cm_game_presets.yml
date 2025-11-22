@@ -1,7 +1,8 @@
 - type: gamePreset
-  id: SichEventPreset
+  id: SichEvent
   alias:
   - event
+  - Event
   name: sich-event-preset-title
   description: sich-event-preset-description
   showInVote: false

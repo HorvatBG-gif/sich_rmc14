@@ -8,4 +8,4 @@
     spawnXenos: false         # готових ксено не заспавнить
     spawnSurvivors: false     # готових виживших не заспавнить
     roundEndCheckDelay: 10800 # перша перевірка чи виконано умови для завершення раунду відбудеться 3 години після старту раунду
-    squadIds: ["SquadDelta"] # один загін
+    squadIds: ["SquadAlpha"] # один загін
