@@ -1,6 +1,6 @@
 - type: gameMap
   id: UNSTundra
-  mapName: ДКП-Тундра "Котигорошко"
+  mapName: ДКП-Тундра "Наполеон"
   mapPath: /Maps/_Sich/tundra.yml
   minPlayers: 0
   maxRandomOffset: 0
@@ -10,7 +10,7 @@
       stationProto: StandardUNMCWarship
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'ДКП-Тундра "Котигорошко"'
+          mapNameTemplate: 'ДКП-Тундра "Наполеон"'
         - type: StationJobs
           availableJobs:
             # Command

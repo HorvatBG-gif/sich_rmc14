@@ -1,0 +1,13 @@
+- type: entity
+  parent: BaseStructure
+  id: SichStatueNich
+  name: статуя героя
+  description: "Кам'яна статуя на честь героя КМПОН. Золотими літерами викарбувано ім'я: Еікіі 'Ніч' та перераховано всіх паразитів вбитих трубою"
+  components:
+  - type: Sprite
+    sprite: _Sich/Structures/Furniture/statues.rsi
+    state: nich
+    drawdepth: Mobs
+    noRot: true
+    offset: "0.0,0.5"
+
