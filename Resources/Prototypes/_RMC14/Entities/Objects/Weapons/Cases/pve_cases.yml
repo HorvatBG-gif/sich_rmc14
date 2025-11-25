@@ -287,7 +287,7 @@
   parent: RMCBasePVEEquipmentCase
   id: RMCPVECaseFlamerFuel
   name: кейс для баків з пальним для М34
-  description: Громіздний кейс що вміщує шість баків з пальним для вогнемету М34.
+  description: Громіздкий кейс що вміщує шість баків з пальним для вогнемету М34.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Storage/PVE_Cases/flamer_fuel.rsi

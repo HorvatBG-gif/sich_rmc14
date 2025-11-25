@@ -2,6 +2,7 @@
   parent: BaseStructure
   id: SichStatueNich
   name: статуя героя
+  suffix: Ніч
   description: "Кам'яна статуя на честь героя КМПОН. Золотими літерами викарбувано ім'я: Еікіі 'Ніч' та перераховано всіх паразитів вбитих трубою"
   components:
   - type: Sprite
@@ -11,3 +12,16 @@
     noRot: true
     offset: "0.0,0.5"
 
+- type: entity
+  parent: BaseStructure
+  id: SichStatueNiavka
+  name: статуя героя
+  suffix: Нявка
+  description: "Кам'яна статуя на честь героя КМПОН. Золотими літерами викарбувано ім'я: Куроме 'Нявка' Нявковська та зазначено її виразну любов до міномету"
+  components:
+  - type: Sprite
+    sprite: _Sich/Structures/Furniture/statues.rsi
+    state: niavka
+    drawdepth: Mobs
+    noRot: true
+    offset: "0.0,0.5"
