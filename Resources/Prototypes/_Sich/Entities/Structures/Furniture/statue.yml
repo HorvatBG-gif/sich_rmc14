@@ -1,4 +1,16 @@
 - type: entity
+  parent: MarkerBase
+  id: SichStatueSpawner
+  name: спавнер статуй Січі
+  components:
+  - type: Sprite
+    state: red
+  - type: RandomSpawner
+    prototypes:
+    - SichStatueNich
+    - SichStatueNiavka
+
+- type: entity
   parent: BaseStructure
   id: SichStatueNich
   name: статуя героя
