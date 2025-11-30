@@ -1,0 +1,35 @@
+- type: localizedDataset
+  id: FigurinesNiavka
+  values:
+    prefix: figurines-niavka-
+    count: 3
+
+- type: localizedDataset
+  id: FigurinesKholod
+  values:
+    prefix: figurines-kholod-
+    count: 1
+
+- type: localizedDataset
+  id: FigurinesAnta
+  values:
+    prefix: figurines-anta-
+    count: 1
+
+- type: localizedDataset
+  id: FigurinesNich
+  values:
+    prefix: figurines-nich-
+    count: 6
+
+- type: localizedDataset
+  id: FigurinesShepit
+  values:
+    prefix: figurines-shepit-
+    count: 4
+
+- type: localizedDataset
+  id: FigurinesShield
+  values:
+    prefix: figurines-shield-
+    count: 4

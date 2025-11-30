@@ -1,0 +1,141 @@
+- type: entity
+  parent: RMCBaseFigurinePatron
+  categories: [ HideSpawnMenu ]
+  id: SichFigurineBase
+  name: базова фігурка
+  description: Фігурка персонажа.
+  components:
+  - type: Sprite
+    sprite: _Sich/Objects/figurines.rsi
+    state: base
+  - type: TriggerOnActivate
+  - type: TriggerOnSignal
+        
+- type: entity
+  parent: MarkerBase
+  id: SichFigurineSpawner
+  name: спавнер фігурок Січі
+  components:
+  - type: Sprite
+    state: red
+  - type: RandomSpawner
+    prototypes:
+    - SichFigurineKholod
+    - SichFigurineNiavka
+    - SichFigurineAnta
+    - SichFigurineNich
+    - SichFigurineShepit
+    - SichFigurineShield
+
+- type: entity
+  parent: SichFigurineBase
+  id: SichFigurineKholod
+  name: Рей 'Холод' Моріс
+  description: Унікальна фігурка офіцера ''Холод'' з лімітованої серії командування сил КМПОН. Це рідкісна тестова модель, виготовлена з фенолформальдегідної смоли - токсичного матеріалу, через що подальші її партії були відкликані в зв'язку з численними скаргами на здоров'я робітників. Вам здається, що вона несправна.
+  components:
+  - type: Sprite
+    state: kholod
+  - type: Speech
+    speechSounds: Alto
+  - type: SpeakOnTrigger
+    pack: FigurinesKholod
+  - type: EmitSoundOnActivate
+    sound:
+     collection: sparks
+    handle: false
+
+- type: entity
+  parent: SichFigurineBase
+  id: SichFigurineNiavka
+  name: Куроме 'Нявка' Нявковська
+  description: Соколята, пам'ятайте три золотих правила. Перше – міномету не існує. Друге – гранат не існує. Третє – не будь сліпим кошеням, за мною!
+  components:
+  - type: Sprite
+    state: niavka
+  - type: UseDelay
+    delay: 10
+  - type: Speech
+    speechSounds: Cat
+  - type: SpeakOnTrigger
+    pack: FigurinesNiavka
+  - type: EmitSoundOnActivate
+    sound:
+     collection: sichMortarTravelExplosion
+    handle: false 
+
+- type: entity
+  parent: SichFigurineBase
+  id: SichFigurineAnta
+  name: Олексій 'Анта' Воробець
+  description: Мама тоже думала що Олексій виросте хорошим хлопчиком. Але Олексій виріс з пляшкою в руці.
+  components:
+  - type: Sprite
+    state: anta
+  - type: Speech
+    speechSounds: Alto
+  - type: SpeakOnTrigger
+    pack: FigurinesAnta
+  - type: EmitSoundOnActivate
+    sound:
+     collection: bottleOpenSounds
+    handle: false
+
+- type: entity
+  parent: SichFigurineBase
+  id: SichFigurineNich
+  name: Еікіі 'Ніч'
+  description: Не існує вправних морпіхів. Не існує природжених воїнів. Існують лиш справді фартові довбні.
+  components:
+  - type: Sprite
+    state: nich
+  - type: Speech
+    speechSounds: MaleAvali
+  - type: SpeakOnTrigger
+    pack: FigurinesNich
+  - type: EmitSoundOnActivate
+    sound:
+     path: /Audio/_Sich/Figurines/m5_shoot_explosion3.ogg
+    handle: false
+
+- type: entity
+  parent: SichFigurineBase
+  id: SichFigurineShepit
+  name: Ланс 'Шепіт' Морган
+  description: Не підпускайте цю фігурку до вендорів з додатковими набоями, ходять слухи що вони вмить зникають.
+  components:
+  - type: Sprite
+    state: shepit
+  - type: Speech
+    speechSounds: Alto
+  - type: SpeakOnTrigger
+    pack: FigurinesShepit
+  - type: EmitSoundOnActivate
+    sound:
+     path: /Audio/_RMC14/Handling/suitlight_crank.ogg 
+    handle: false
+
+- type: entity
+  parent: SichFigurineBase
+  id: SichFigurineShield
+  name: Василь “Щит” Васильович
+  description: Мені здається, він був на тій роботі… а може, на іншій? Ох-. . Схоже він клонів своїх уже на всі боки розкидав!
+  components:
+  - type: Sprite
+    state: shield
+  - type: Speech
+    speechSounds: Alto
+  - type: SpeakOnTrigger
+    pack: FigurinesShield
+
+- type: entity
+  parent: SichFigurineBase
+  id: SichFigurineAssi
+  name: Грейсон 'Ассі' Карлайн
+  description: так
+  components:
+  - type: Sprite
+    state: assi
+  - type: EmitSoundOnActivate
+    sound:
+     path: /Audio/_RMC14/Effects/tech_notification.ogg
+    handle: false
