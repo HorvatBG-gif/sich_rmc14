@@ -33,3 +33,21 @@
   values:
     prefix: figurines-shield-
     count: 4
+
+- type: localizedDataset
+  id: FigurinesSyrena
+  values:
+    prefix: figurines-syrena-
+    count: 4
+
+- type: localizedDataset
+  id: FigurinesArchangel
+  values:
+    prefix: figurines-archangel-
+    count: 1
+
+- type: localizedDataset
+  id: FigurinesAssi
+  values:
+    prefix: figurines-assi-
+    count: 2

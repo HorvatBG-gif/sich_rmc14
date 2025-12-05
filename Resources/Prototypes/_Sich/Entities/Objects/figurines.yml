@@ -26,6 +26,10 @@
     - SichFigurineNich
     - SichFigurineShepit
     - SichFigurineShield
+    - SichFigurineAssi
+    - SichFigurineSyrena
+    - SichFigurineOmikron
+    - SichFigurineArchangel
 
 - type: entity
   parent: SichFigurineBase
@@ -111,13 +115,13 @@
     pack: FigurinesShepit
   - type: EmitSoundOnActivate
     sound:
-     path: /Audio/_RMC14/Handling/suitlight_crank.ogg 
+     path: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_reload.ogg
     handle: false
 
 - type: entity
   parent: SichFigurineBase
   id: SichFigurineShield
-  name: Василь “Щит” Васильович
+  name: Василь 'Щит' Васильович
   description: Мені здається, він був на тій роботі… а може, на іншій? Ох-. . Схоже він клонів своїх уже на всі боки розкидав!
   components:
   - type: Sprite
@@ -135,7 +139,57 @@
   components:
   - type: Sprite
     state: assi
+  - type: SpeakOnTrigger
+    pack: FigurinesAssi
   - type: EmitSoundOnActivate
     sound:
      path: /Audio/_RMC14/Effects/tech_notification.ogg
+    handle: false
+
+- type: entity
+  parent: SichFigurineBase
+  id: SichFigurineSyrena
+  name: Джек 'Сирена' Картер
+  description: Доволі веселий погляд, в якому відчувається легкість та, водночас, суворість.
+  components:
+  - type: Sprite
+    state: syrena
+  - type: UseDelay
+    delay: 300
+  - type: Speech
+    speechSounds: Alto
+  - type: SpeakOnTrigger
+    pack: FigurinesSyrena
+  - type: EmitSoundOnActivate
+    sound:
+     path: /Audio/_RMC14/Weapons/gun_orbital_travel.ogg 
+    handle: false
+
+- type: entity
+  parent: SichFigurineBase
+  id: SichFigurineOmikron
+  name: Датар-Ушар 
+  description: Унатх зростом приблизно 200~210см, середньої тілобудови, пазурі тупі, відсутній безіменний палець лівої руки, роги сильно пошкоджені.На його шиї помітно невеликий кулон, бронзовий хвіст ящірки що перетинається списом.
+  components:
+  - type: Sprite
+    state: omikron
+  - type: EmitSoundOnActivate
+    sound:
+     path: /Audio/_RMC14/Weapons/Guns/Pump/gun_boomslang_lever.ogg
+
+- type: entity
+  parent: SichFigurineBase
+  id: SichFigurineArchangel
+  name: Каар 'Архангел'
+  description: Авалі з чорно-червоним пір'ям тримаючи гвинтівку в руках дивится в бік, його ноги та пояс вкриті зеленою-. . кислотою?
+  components:
+  - type: Sprite
+    state: archangel
+  - type: Speech
+    speechSounds: MaleAvali
+  - type: SpeakOnTrigger
+    pack: FigurinesArchangel
+  - type: EmitSoundOnActivate
+    sound:
+     path: /Audio/_RMC14/Weapons/Guns/Cock/gun_cocked2.ogg
     handle: false
