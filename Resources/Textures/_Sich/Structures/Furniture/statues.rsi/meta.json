@@ -6,12 +6,15 @@
     "x": 32,
     "y": 64
   },
-  "states": [
-    {
-       "name": "nich"
-    },
-    {
-       "name": "niavka"
-    }
-  ]
+    "states": [
+        {
+            "name": "nich"
+        },
+        {
+            "name": "niavka"
+        },
+        {
+            "name": "syrena"
+        }
+    ]
 }
