@@ -12,3 +12,14 @@
     startARESAnnouncements: false # АРЕС не вітає морпіхів
     squadIds: ["SquadSunRiders"] # загін "Сонячні вершники" з івентового корабля
     extraSquadIds: []         # без інтелу й форкону(сурви не спавняться)
+
+- type: entity
+  id: SichCalmed
+  parent: CMDistressSignal
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: CMDistressSignalRule
+    requireXenoPlayers: false 
+    spawnXenos: false         
+    spawnSurvivors: false     
+    roundEndCheckDelay: 10800 # 3 години

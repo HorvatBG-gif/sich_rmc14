@@ -8,3 +8,14 @@
   showInVote: false
   rules:
   - SichEventSunRiders
+
+- type: gamePreset
+  id: SichCalmed
+  alias:
+  - calmed
+  - Calmed
+  name: sich-event-preset-title
+  description: sich-event-preset-description
+  showInVote: false
+  rules:
+  - SichCalmed
