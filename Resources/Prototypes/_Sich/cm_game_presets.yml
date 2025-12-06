@@ -14,8 +14,8 @@
   alias:
   - calmed
   - Calmed
-  name: sich-event-preset-title
-  description: sich-event-preset-description
+  name: sich-calmed-preset-title
+  description: sich-calmed-preset-description
   showInVote: false
   rules:
   - SichCalmed

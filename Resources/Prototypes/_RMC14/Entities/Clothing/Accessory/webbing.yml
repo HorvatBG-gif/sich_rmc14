@@ -395,7 +395,7 @@
 - type: entity
   parent: CMWebbingBase
   id: RMCWebbingClipOnPouch
-  name: кліпсовий підсумок 
+  name: кліпсовий підсумок
   description: Кліпосовий підсумок з синтетичної шкіри, призначений для носіння додаткових дрібниць операторів важкого кулемету підтримки МЛ66А.
   components:
   - type: Sprite
