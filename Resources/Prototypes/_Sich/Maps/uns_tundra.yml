@@ -1,6 +1,6 @@
 - type: gameMap
   id: SichUNSTundra
-  mapName: ДКП-Тундра "Наполеон"
+  mapName: Наполеон
   mapPath: /Maps/_Sich/tundra.yml
   minPlayers: 0
   maxRandomOffset: 0

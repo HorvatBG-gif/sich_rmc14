@@ -108,7 +108,7 @@
 - type: entity
   parent: RMCAreaTundraCryo
   id: RMCAreaTundraOOB
-  name: Tundra OOB   
+  name: Поза Межами
   components:
   - type: Sprite
     state: oob
