@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.2
   forkId: ""
   forkVersion: ""
-  time: 12/07/2025 10:48:04
-  entityCount: 9015
+  time: 12/07/2025 16:50:04
+  entityCount: 9023
 maps:
 - 1
 grids:
@@ -12328,7 +12328,7 @@ entities:
       pos: 37.5,25.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -11615.417
+      secondsUntilStateChange: -12433.683
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -12465,7 +12465,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -7297.9556
+      secondsUntilStateChange: -8116.2207
       state: Opening
   - uid: 5892
     components:
@@ -12530,7 +12530,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -13535.915
+      secondsUntilStateChange: -14354.181
       state: Opening
   - uid: 8352
     components:
@@ -12553,7 +12553,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -11301.051
+      secondsUntilStateChange: -12119.316
       state: Opening
   - uid: 8386
     components:
@@ -15605,9 +15605,13 @@ entities:
           showEnts: False
           occludes: True
           ents:
+          - 9018
+          - 9017
+          - 9016
           - 2019
-          - 2018
           - 2020
+          - 2018
+          - 7153
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -15883,7 +15887,7 @@ entities:
     - type: CMDoubleDoor
       lastOpeningAt: 7106.8595598
     - type: Door
-      secondsUntilStateChange: -11611.751
+      secondsUntilStateChange: -12430.017
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -15897,7 +15901,7 @@ entities:
     - type: CMDoubleDoor
       lastOpeningAt: 7106.8595598
     - type: Door
-      secondsUntilStateChange: -11611.751
+      secondsUntilStateChange: -12430.017
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -16040,6 +16044,11 @@ entities:
     - type: Transform
       pos: 1.7289639,89.490135
       parent: 1
+    - type: UserInterface
+      actors:
+        enum.StorageUiKey.Key:
+        - invalid
+    - type: ActiveUserInterface
 - proto: CMFolderBlack
   entities:
   - uid: 1789
@@ -16212,6 +16221,25 @@ entities:
     - type: Transform
       pos: 8.5,9.5
       parent: 1
+- proto: CMLockerCMDCabinet
+  entities:
+  - uid: 9020
+    components:
+    - type: Transform
+      pos: 1.5,92.5
+      parent: 1
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 9022
+          - 9021
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
 - proto: CMLockerMedicalWhite
   entities:
   - uid: 3458
@@ -16544,7 +16572,7 @@ entities:
   - uid: 7193
     components:
     - type: Transform
-      pos: -4.50601,94.77826
+      pos: -4.123081,94.82122
       parent: 1
   - uid: 7194
     components:
@@ -22736,6 +22764,15 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -6.5,-36.5
       parent: 1
+- proto: RMCBeltHolsterRevolver
+  entities:
+  - uid: 7153
+    components:
+    - type: Transform
+      parent: 2017
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: RMCBlackSensorComputer
   entities:
   - uid: 7277
@@ -30564,7 +30601,7 @@ entities:
       pos: 5.5,16.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -16611.312
+      secondsUntilStateChange: -17429.578
       state: Closing
   - uid: 1233
     components:
@@ -30572,7 +30609,7 @@ entities:
       pos: 6.5,16.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -16610.945
+      secondsUntilStateChange: -17429.21
       state: Closing
 - proto: RMCDeployerSentry
   entities:
@@ -31341,6 +31378,13 @@ entities:
     - type: Transform
       pos: 43.3501,74.655914
       parent: 1
+- proto: RMCGunCasePistolM44Custom
+  entities:
+  - uid: 9023
+    components:
+    - type: Transform
+      pos: -0.6502394,91.416595
+      parent: 1
 - proto: RMCGunCasePistolSmart
   entities:
   - uid: 501
@@ -32055,6 +32099,22 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -15.5,3.5
+      parent: 1
+- proto: RMCIDCCardReserve
+  entities:
+  - uid: 9021
+    components:
+    - type: Transform
+      parent: 9020
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+- proto: RMCIDComputer
+  entities:
+  - uid: 9019
+    components:
+    - type: Transform
+      pos: 7.1315866,100.50633
       parent: 1
 - proto: RMCIdentificationComputer
   entities:
@@ -42650,11 +42710,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 58.522213,60.645916
       parent: 1
-  - uid: 7153
-    components:
-    - type: Transform
-      pos: 7.1288056,100.50153
-      parent: 1
 - proto: RMCSensorTower
   entities:
   - uid: 8748
@@ -42734,6 +42789,8 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -15.5,62.5
       parent: 1
+    - type: RMCPodDoor
+      id: DN_equipmentlockers
   - uid: 2438
     components:
     - type: Transform
@@ -43227,6 +43284,29 @@ entities:
     - type: Transform
       pos: 1.5,6.5
       parent: 1
+- proto: RMCSpeedLoaderM44
+  entities:
+  - uid: 9016
+    components:
+    - type: Transform
+      parent: 2017
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 9017
+    components:
+    - type: Transform
+      parent: 2017
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 9018
+    components:
+    - type: Transform
+      parent: 2017
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: RMCSpoonPlastic
   entities:
   - uid: 921
@@ -43912,6 +43992,15 @@ entities:
     - type: Transform
       pos: -3.5,-38.5
       parent: 1
+- proto: RMCTabletCO
+  entities:
+  - uid: 9022
+    components:
+    - type: Transform
+      parent: 9020
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: RMCTacticalMapTableLarge
   entities:
   - uid: 7050
