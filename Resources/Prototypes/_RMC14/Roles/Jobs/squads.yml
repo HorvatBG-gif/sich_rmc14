@@ -357,7 +357,7 @@
 - type: entity
   parent: SquadBase
   id: SquadSunRiders
-  name: Сонячні Вершники
+  name: Sun Riders
   components:
   - type: SquadTeam
     color: "#4148c8"
