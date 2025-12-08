@@ -4,7 +4,7 @@ meta:
   engineVersion: 264.0.2
   forkId: ""
   forkVersion: ""
-  time: 12/07/2025 16:50:04
+  time: 12/08/2025 08:02:31
   entityCount: 9023
 maps:
 - 1
@@ -12328,7 +12328,7 @@ entities:
       pos: 37.5,25.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -12433.683
+      secondsUntilStateChange: -12785.967
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -12465,7 +12465,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -8116.2207
+      secondsUntilStateChange: -8468.505
       state: Opening
   - uid: 5892
     components:
@@ -12530,7 +12530,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -14354.181
+      secondsUntilStateChange: -14706.465
       state: Opening
   - uid: 8352
     components:
@@ -12553,7 +12553,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -12119.316
+      secondsUntilStateChange: -12471.601
       state: Opening
   - uid: 8386
     components:
@@ -15887,7 +15887,7 @@ entities:
     - type: CMDoubleDoor
       lastOpeningAt: 7106.8595598
     - type: Door
-      secondsUntilStateChange: -12430.017
+      secondsUntilStateChange: -12782.301
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -15901,7 +15901,7 @@ entities:
     - type: CMDoubleDoor
       lastOpeningAt: 7106.8595598
     - type: Door
-      secondsUntilStateChange: -12430.017
+      secondsUntilStateChange: -12782.301
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -21471,6 +21471,170 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -12.5,-32.5
       parent: 1
+- proto: RMCBarricadeHandrailAlt
+  entities:
+  - uid: 2635
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -18.5,61.5
+      parent: 1
+    - type: Destructible
+      thresholds:
+      - trigger: !type:DamageTrigger
+          damage: 1000
+        triggersOnce: False
+        triggered: False
+        behaviors:
+        - !type:PlaySoundBehavior
+          sound: !type:SoundCollectionSpecifier
+            params:
+              variation: null
+              playOffsetSeconds: 0
+              loop: False
+              referenceDistance: 1
+              rolloffFactor: 1
+              maxDistance: 15
+              pitch: 1
+              volume: 0
+            collection: MetalBreak
+        - !type:DoActsBehavior
+          acts: Destruction
+  - uid: 2636
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -18.5,62.5
+      parent: 1
+    - type: Destructible
+      thresholds:
+      - trigger: !type:DamageTrigger
+          damage: 1000
+        triggersOnce: False
+        triggered: False
+        behaviors:
+        - !type:PlaySoundBehavior
+          sound: !type:SoundCollectionSpecifier
+            params:
+              variation: null
+              playOffsetSeconds: 0
+              loop: False
+              referenceDistance: 1
+              rolloffFactor: 1
+              maxDistance: 15
+              pitch: 1
+              volume: 0
+            collection: MetalBreak
+        - !type:DoActsBehavior
+          acts: Destruction
+  - uid: 2637
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -18.5,63.5
+      parent: 1
+    - type: Destructible
+      thresholds:
+      - trigger: !type:DamageTrigger
+          damage: 1000
+        triggersOnce: False
+        triggered: False
+        behaviors:
+        - !type:PlaySoundBehavior
+          sound: !type:SoundCollectionSpecifier
+            params:
+              variation: null
+              playOffsetSeconds: 0
+              loop: False
+              referenceDistance: 1
+              rolloffFactor: 1
+              maxDistance: 15
+              pitch: 1
+              volume: 0
+            collection: MetalBreak
+        - !type:DoActsBehavior
+          acts: Destruction
+  - uid: 2638
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -4.5,61.5
+      parent: 1
+    - type: Destructible
+      thresholds:
+      - trigger: !type:DamageTrigger
+          damage: 1000
+        triggersOnce: False
+        triggered: False
+        behaviors:
+        - !type:PlaySoundBehavior
+          sound: !type:SoundCollectionSpecifier
+            params:
+              variation: null
+              playOffsetSeconds: 0
+              loop: False
+              referenceDistance: 1
+              rolloffFactor: 1
+              maxDistance: 15
+              pitch: 1
+              volume: 0
+            collection: MetalBreak
+        - !type:DoActsBehavior
+          acts: Destruction
+  - uid: 2639
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -4.5,62.5
+      parent: 1
+    - type: Destructible
+      thresholds:
+      - trigger: !type:DamageTrigger
+          damage: 1000
+        triggersOnce: False
+        triggered: False
+        behaviors:
+        - !type:PlaySoundBehavior
+          sound: !type:SoundCollectionSpecifier
+            params:
+              variation: null
+              playOffsetSeconds: 0
+              loop: False
+              referenceDistance: 1
+              rolloffFactor: 1
+              maxDistance: 15
+              pitch: 1
+              volume: 0
+            collection: MetalBreak
+        - !type:DoActsBehavior
+          acts: Destruction
+  - uid: 2640
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -4.5,63.5
+      parent: 1
+    - type: Destructible
+      thresholds:
+      - trigger: !type:DamageTrigger
+          damage: 1000
+        triggersOnce: False
+        triggered: False
+        behaviors:
+        - !type:PlaySoundBehavior
+          sound: !type:SoundCollectionSpecifier
+            params:
+              variation: null
+              playOffsetSeconds: 0
+              loop: False
+              referenceDistance: 1
+              rolloffFactor: 1
+              maxDistance: 15
+              pitch: 1
+              volume: 0
+            collection: MetalBreak
+        - !type:DoActsBehavior
+          acts: Destruction
 - proto: RMCBarricadeHandrailAltDrawdepth
   entities:
   - uid: 233
@@ -22253,42 +22417,6 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -7.5,64.5
-      parent: 1
-  - uid: 2635
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -19.5,63.5
-      parent: 1
-  - uid: 2636
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -19.5,62.5
-      parent: 1
-  - uid: 2637
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -19.5,61.5
-      parent: 1
-  - uid: 2638
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -3.5,63.5
-      parent: 1
-  - uid: 2639
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -3.5,62.5
-      parent: 1
-  - uid: 2640
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -3.5,61.5
       parent: 1
   - uid: 2886
     components:
@@ -30601,7 +30729,7 @@ entities:
       pos: 5.5,16.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -17429.578
+      secondsUntilStateChange: -17781.863
       state: Closing
   - uid: 1233
     components:
@@ -30609,7 +30737,7 @@ entities:
       pos: 6.5,16.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -17429.21
+      secondsUntilStateChange: -17781.496
       state: Closing
 - proto: RMCDeployerSentry
   entities:
