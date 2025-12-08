@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.2
   forkId: ""
   forkVersion: ""
-  time: 12/08/2025 08:02:31
-  entityCount: 9023
+  time: 12/08/2025 09:05:13
+  entityCount: 9039
 maps:
 - 1
 grids:
@@ -12260,6 +12260,33 @@ entities:
     - type: Action
       originalIconColor: '#FFFFFFFF'
       container: 7195
+- proto: ArmorHelmetM10
+  entities:
+  - uid: 1206
+    components:
+    - type: Transform
+      pos: 7.30603,15.284471
+      parent: 1
+    - type: CycleableVisor
+      action: 9036
+    - type: Storage
+      storedItems:
+        9035:
+          position: 0,0
+          _rotation: South
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 9035
+        actions: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 9036
+    - type: ActionsContainer
 - proto: Bedroll
   entities:
   - uid: 2188
@@ -12282,12 +12309,7 @@ entities:
   - uid: 1205
     components:
     - type: Transform
-      pos: 8.38237,15.740028
-      parent: 1
-  - uid: 1206
-    components:
-    - type: Transform
-      pos: 8.585646,15.411903
+      pos: 9.451617,13.300977
       parent: 1
 - proto: CigaretteSpent
   entities:
@@ -12328,7 +12350,7 @@ entities:
       pos: 37.5,25.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -12785.967
+      secondsUntilStateChange: -13535.487
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -12465,7 +12487,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -8468.505
+      secondsUntilStateChange: -9218.025
       state: Opening
   - uid: 5892
     components:
@@ -12530,7 +12552,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -14706.465
+      secondsUntilStateChange: -15455.985
       state: Opening
   - uid: 8352
     components:
@@ -12553,7 +12575,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -12471.601
+      secondsUntilStateChange: -13221.121
       state: Opening
   - uid: 8386
     components:
@@ -15887,7 +15909,7 @@ entities:
     - type: CMDoubleDoor
       lastOpeningAt: 7106.8595598
     - type: Door
-      secondsUntilStateChange: -12782.301
+      secondsUntilStateChange: -13531.821
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -15901,7 +15923,7 @@ entities:
     - type: CMDoubleDoor
       lastOpeningAt: 7106.8595598
     - type: Door
-      secondsUntilStateChange: -12782.301
+      secondsUntilStateChange: -13531.821
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -16236,6 +16258,62 @@ entities:
           ents:
           - 9022
           - 9021
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+- proto: CMLockerFridge
+  entities:
+  - uid: 1076
+    components:
+    - type: Transform
+      pos: -27.5,30.5
+      parent: 1
+    - type: Lock
+      locked: False
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 2428
+          - 5261
+          - 5262
+          - 7416
+          - 8981
+          - 8982
+          - 8983
+          - 8984
+          - 8985
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+  - uid: 8986
+    components:
+    - type: Transform
+      pos: -27.5,31.5
+      parent: 1
+    - type: Lock
+      locked: False
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 9024
+          - 9025
+          - 9026
+          - 9027
+          - 9028
+          - 9029
+          - 9030
+          - 9031
+          - 9032
+          - 9033
+          - 9034
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -20429,6 +20507,17 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 6.5,20.5
       parent: 1
+- proto: RMCActionCycleVisor
+  entities:
+  - uid: 9036
+    mapInit: true
+    paused: true
+    components:
+    - type: Transform
+      parent: 1206
+    - type: Action
+      originalIconColor: '#FFFFFFFF'
+      container: 1206
 - proto: RMCAIConsoleARES
   entities:
   - uid: 7771
@@ -29655,36 +29744,6 @@ entities:
     - type: Transform
       pos: -2.588647,30.848763
       parent: 1
-  - uid: 1071
-    components:
-    - type: Transform
-      pos: -24.716122,36.813606
-      parent: 1
-  - uid: 1072
-    components:
-    - type: Transform
-      pos: -24.340841,36.813606
-      parent: 1
-  - uid: 1073
-    components:
-    - type: Transform
-      pos: -24.747395,36.54798
-      parent: 1
-  - uid: 1074
-    components:
-    - type: Transform
-      pos: -24.622301,36.469856
-      parent: 1
-  - uid: 1075
-    components:
-    - type: Transform
-      pos: -24.52848,36.64173
-      parent: 1
-  - uid: 1076
-    components:
-    - type: Transform
-      pos: -24.309568,36.501106
-      parent: 1
 - proto: RMCCoffeeCupFilled
   entities:
   - uid: 910
@@ -29701,6 +29760,11 @@ entities:
     components:
     - type: Transform
       pos: -2.6824675,30.551888
+      parent: 1
+  - uid: 1075
+    components:
+    - type: Transform
+      pos: -24.220005,32.861702
       parent: 1
   - uid: 7097
     components:
@@ -30729,7 +30793,7 @@ entities:
       pos: 5.5,16.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -17781.863
+      secondsUntilStateChange: -18531.383
       state: Closing
   - uid: 1233
     components:
@@ -30737,7 +30801,7 @@ entities:
       pos: 6.5,16.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -17781.496
+      secondsUntilStateChange: -18531.016
       state: Closing
 - proto: RMCDeployerSentry
   entities:
@@ -30911,86 +30975,160 @@ entities:
     - type: Transform
       pos: 44.365726,69.54654
       parent: 1
+- proto: RMCFoodDonutJelly
+  entities:
+  - uid: 9024
+    components:
+    - type: Transform
+      parent: 8986
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 9025
+    components:
+    - type: Transform
+      parent: 8986
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 9026
+    components:
+    - type: Transform
+      parent: 8986
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 9037
+    components:
+    - type: Transform
+      pos: 9.6904335,13.349833
+      parent: 1
+- proto: RMCFoodDonutJellyFrosted
+  entities:
+  - uid: 9027
+    components:
+    - type: Transform
+      parent: 8986
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 9028
+    components:
+    - type: Transform
+      parent: 8986
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 9029
+    components:
+    - type: Transform
+      parent: 8986
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: RMCFoodPBJSandwich
   entities:
-  - uid: 7416
+  - uid: 9030
     components:
     - type: Transform
-      parent: 1063
+      parent: 8986
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-  - uid: 8982
+  - uid: 9031
     components:
     - type: Transform
-      parent: 1063
+      parent: 8986
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-  - uid: 8984
+  - uid: 9032
     components:
     - type: Transform
-      parent: 1063
+      parent: 8986
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-  - uid: 8985
+  - uid: 9033
     components:
     - type: Transform
-      parent: 1063
+      parent: 8986
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-  - uid: 8986
+  - uid: 9034
     components:
     - type: Transform
-      parent: 1063
+      parent: 8986
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: RMCFoodPizzaMeatFull
+- proto: RMCFoodPizzaHawaiianFull
   entities:
-  - uid: 481
-    components:
-    - type: Transform
-      parent: 1068
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
   - uid: 2428
     components:
     - type: Transform
-      parent: 1068
+      parent: 1076
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
   - uid: 5261
     components:
     - type: Transform
-      parent: 1068
+      parent: 1076
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: RMCFoodPizzaVegetableFull
-  entities:
   - uid: 5262
     components:
     - type: Transform
-      parent: 1063
+      parent: 1076
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+- proto: RMCFoodPizzaMargheritaFull
+  entities:
+  - uid: 8983
+    components:
+    - type: Transform
+      parent: 1076
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 8984
+    components:
+    - type: Transform
+      parent: 1076
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 8985
+    components:
+    - type: Transform
+      parent: 1076
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+- proto: RMCFoodPizzaMeatFull
+  entities:
+  - uid: 7416
+    components:
+    - type: Transform
+      parent: 1076
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
   - uid: 8981
     components:
     - type: Transform
-      parent: 1063
+      parent: 1076
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-  - uid: 8983
+  - uid: 8982
     components:
     - type: Transform
-      parent: 1063
+      parent: 1076
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
@@ -31568,6 +31706,14 @@ entities:
     - type: Transform
       pos: -20.607433,58.70262
       parent: 1
+- proto: RMCHelmetGarbRosary
+  entities:
+  - uid: 9035
+    components:
+    - type: Transform
+      parent: 1206
+    - type: Physics
+      canCollide: False
 - proto: RMCHybrisaStairs
   entities:
   - uid: 1348
@@ -34141,55 +34287,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 19,98.5
       parent: 1
-- proto: RMCLockerFridgeMeat
-  entities:
-  - uid: 1068
-    components:
-    - type: Transform
-      pos: -27.5,31.5
-      parent: 1
-    - type: Lock
-      locked: False
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 481
-          - 2428
-          - 5261
-        paper_label: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-- proto: RMCLockerFridgeOrganic
-  entities:
-  - uid: 1063
-    components:
-    - type: Transform
-      pos: -27.5,30.5
-      parent: 1
-    - type: Lock
-      locked: False
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 5262
-          - 7416
-          - 8981
-          - 8982
-          - 8983
-          - 8984
-          - 8985
-          - 8986
-        paper_label: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
 - proto: RMCLockerSmartGunOperatorOne
   entities:
   - uid: 2592
@@ -34393,6 +34490,21 @@ entities:
       parent: 1
 - proto: RMCMarineCorpsCup
   entities:
+  - uid: 481
+    components:
+    - type: Transform
+      pos: -24.810675,36.771187
+      parent: 1
+  - uid: 1063
+    components:
+    - type: Transform
+      pos: -24.810675,36.531605
+      parent: 1
+  - uid: 1072
+    components:
+    - type: Transform
+      pos: -24.654425,36.44827
+      parent: 1
   - uid: 2589
     components:
     - type: Transform
@@ -38649,6 +38761,13 @@ entities:
     components:
     - type: Transform
       pos: -6.0490675,69.39618
+      parent: 1
+- proto: RMCPatchPeace
+  entities:
+  - uid: 9038
+    components:
+    - type: Transform
+      pos: 7.74353,15.471971
       parent: 1
 - proto: RMCPersonalDesktop
   entities:
@@ -44838,6 +44957,26 @@ entities:
       adjust: 0,-44
 - proto: RMCUnitedNationsCup
   entities:
+  - uid: 1068
+    components:
+    - type: Transform
+      pos: -24.091925,36.802437
+      parent: 1
+  - uid: 1071
+    components:
+    - type: Transform
+      pos: -24.28984,36.489937
+      parent: 1
+  - uid: 1073
+    components:
+    - type: Transform
+      pos: -24.38359,36.646187
+      parent: 1
+  - uid: 1074
+    components:
+    - type: Transform
+      pos: -24.144007,36.63577
+      parent: 1
   - uid: 5238
     components:
     - type: Transform
@@ -62397,6 +62536,13 @@ entities:
     components:
     - type: Transform
       pos: -0.5,-14.5
+      parent: 1
+- proto: RMCWeaponRevolverM44Empty
+  entities:
+  - uid: 9039
+    components:
+    - type: Transform
+      pos: 9.376884,15.598749
       parent: 1
 - proto: RMCWeldingGoggles
   entities:
