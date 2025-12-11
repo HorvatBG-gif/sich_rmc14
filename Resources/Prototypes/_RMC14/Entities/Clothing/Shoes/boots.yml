@@ -137,8 +137,8 @@
 - type: entity
   parent: CMBootsBlack
   id: CMBootsGrey
-  name: сірі чоботи
-  description: Стандартні бойові чоботи для бойових дій або бойових ситуацій. Весь бій, весь час. Вони сірого кольору.
+  name: бойові чоботи морпіхів
+  description: Стандартні бойові чоботи, гарно показують себе в усіх сценаріях. Завжди сірі, ЗАВЖДИ.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Shoes/Boots/grey.rsi

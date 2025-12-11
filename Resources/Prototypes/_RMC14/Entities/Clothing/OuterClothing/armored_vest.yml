@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: [RMCAllowSuitStorageClothingArmorVest, RMCBaseArmor]
   id: RMCArmorVest
   name: armor vest
@@ -142,8 +142,8 @@
 - type: entity
   parent: RMCArmorVestMP
   id: RMCArmorVestSquad
-  name: M3-XL pattern marine armor vest
-  description: A type of M3-XL body armor, standard issue for UNMC marines. The shoulder pads have been taken off for ease of movement. Not recommended for direct combat or for deployment use against hostiles.
+  name: захисний жилет зразка М3-ЕЛ
+  description: Стандартний захисний жилет зразка М3-ЕЛ. Наплічники зняті для зручності рухів. Не рекомендований для безпосередніх бойових дій.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/m3/extra-light/corpsman.rsi
@@ -154,8 +154,8 @@
 - type: entity
   parent: RMCArmorVestSquad
   id: RMCArmorVestMedic
-  name: M3-XL pattern corpsman armor vest
-  description: A type of M3-XL body armor, made specially for UNMC Corpsmen. The shoulder pads have been taken off for ease of movement. Not recommended for direct combat or for deployment use against hostiles.
+  name: захисний жилет бойового медика зразка М3-ЕЛ
+  description: Стандартний захисний жилет зразка М3-ЕЛ. Ця модель призначена для бойових медиків КМПОН. Наплічники зняті для зручності рухів. Не рекомендований для безпосередніх бойових дій.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/m3/extra-light/corpsman.rsi
@@ -163,8 +163,8 @@
 - type: entity
   parent: RMCArmorVestSquad
   id: RMCArmorVestSquadLeader
-  name: M3-XL pattern squad leader armor vest
-  description: A type of M3-XL body armor, made specially for squad leaders, with a dedicated pouch for a box of zip ties. The shoulder pads have been taken off for ease of movement. Not recommended for direct combat or for deployment use against hostiles.
+  name: захисний жилет лідера загону зразка М3-ЕЛ
+  description: Стандартний захисний жилет зразка М3-ЕЛ. Ця модель була спроєктована для використання лідерами загонів КМПОН та містить окремий підсумок для стяжок. Наплічники зняті для зручності рухів. Не рекомендований для безпосередніх бойових дій.
   suffix: Zipties
   components:
   - type: Storage
