@@ -162,8 +162,8 @@
 - type: entity
   parent: ArmorHelmetM10
   id: RMCArmorHelmetM10Welding
-  name: M10 welding helmet
-  description: A modified M10 marine helmet, Features a toggleable welding screen for eye protection. Completely invisible while toggled off as opposed to the technician helmet.
+  name: зварювальний шолом М10
+  description: Модифікований шолом М10. Оснащенний перемикальним зварювальним екраном для захисту очей. У вимкненому стані екран повністю непомітний, на відміну від шолома бойового техніка.
   components:
   - type: CycleableVisor
     containers:
