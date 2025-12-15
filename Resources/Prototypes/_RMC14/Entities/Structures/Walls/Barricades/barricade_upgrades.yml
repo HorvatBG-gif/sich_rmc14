@@ -11,7 +11,7 @@
 - type: entity
   parent: RMCBarricadeUpgradeBase
   id: RMCExplosiveUpgrade
-  name: composite upgrade (++Explosive, ++Projectile, ++Fire)
+  name: вибухостійке покращення (++Вибухи, ++Снаряди, ++Вогонь)
   categories: [ HideSpawnMenu ]
   components:
   - type: RMCConstructionUpgrade
@@ -23,7 +23,7 @@
 - type: entity
   parent: RMCBarricadeUpgradeBase
   id: RMCBiohazardUpgrade
-  name: biohazard upgrade (+Burn)
+  name: антикислотне покращення (+Кислота)
   categories: [ HideSpawnMenu ]
   components:
   - type: RMCConstructionUpgrade
@@ -35,7 +35,7 @@
 - type: entity
   parent: RMCBarricadeUpgradeBase
   id: RMCBruteUpgrade
-  name: reinforced upgrade (+Brute)
+  name: ударостійке покращення (+Фізична шкода)
   categories: [ HideSpawnMenu ]
   components:
   - type: RMCConstructionUpgrade
