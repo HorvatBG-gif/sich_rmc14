@@ -1,7 +1,7 @@
 ﻿- type: entity
   abstract: true
   id: RMCHiveBoonBase
-  name: hive boon
+  name: бонус вулика
   components:
   - type: HiveBoonDefinition
     cost: 1
@@ -9,8 +9,8 @@
 - type: entity
   parent: RMCHiveBoonBase
   id: RMCHiveBoonFireResistance
-  name: Boon of Fire Resistance
-  description: Makes all xenonids immune to fire for 5 minutes.
+  name: Бонус Захисту від Вогню
+  description: Робить всіх ксеноїдів невразливими до вогню на 5 хвилин.
   components:
   - type: HiveBoonDefinition
     duration: 5m
@@ -20,8 +20,8 @@
 - type: entity
   parent: RMCHiveBoonBase
   id: RMCHiveBoonLarvaSurge
-  name: Surge of Larva
-  description: Provides 5 larva instantly to the hive.
+  name: Пробудження Лярв
+  description: Приводить 5 нових схованих лярв у вулик.
   components:
   - type: HiveBoonDefinition
     cost: 5
@@ -32,15 +32,15 @@
 - type: entity
   parent: RMCHiveBoonBase
   id: RMCHiveBoonKing
-  name: His Grace
-  description: A huge behemoth of a Xenonid which can tear its way through defences and flesh alike. Requires open space around the hive core to spawn.
+  name: Його Величність
+  description: Найпотужніший та найжаливіший з усіх ксеноїдів, Король. Прорветься крізь плоть та залізо на шляху до остаточної перемоги вулику.
   components:
   - type: HiveBoonDefinition
     cost: 0
     pylons: 2
     cooldown: 15m
-    unlockAt: 90m
-    unlockAtRandomAdd: 25m
+    unlockAt: 80m # Sich. 90 в оригіналі
+    unlockAtRandomAdd: 10m # Sich. 25 в оригіналі
     duplicateId: RMCHiveBoonKing
     noLivingKing: true
     requiresCore: true
@@ -49,8 +49,8 @@
 - type: entity
   parent: BaseHiveStructure
   id: RMCHiveCocoonKing
-  name: alien cocoon
-  description: A large pulsating cocoon.
+  name: невідомий кокон
+  description: Величезний пульсуючий кокон. Виглядає небезпечно жахаючим.
   components:
   - type: Transform
     anchored: true

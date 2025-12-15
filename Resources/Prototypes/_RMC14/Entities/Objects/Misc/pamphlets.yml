@@ -10,6 +10,7 @@
   - type: Item
     size: Tiny
   - type: SkillPamphlet
+    bypassLimit: true # Sich. Дайте читати довідники скільки лізе
     whitelists:
     - popup: rmc-pamphlets-cant-use
       restrictions:
