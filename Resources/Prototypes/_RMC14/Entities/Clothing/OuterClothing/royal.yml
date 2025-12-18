@@ -1,7 +1,7 @@
 # Royal Crown Marines
 # TODO: implement storage whitelist for this
 - type: entity
-  parent: [RMCArmorM4PMCNoLight, RMCBaseMarineArmorLight, RMCAllowSuitStorageClothingArmorRoyal]
+  parent: [RMCBaseTSEArmor, RMCArmorM4PMCNoLight, RMCBaseMarineArmorLight, RMCAllowSuitStorageClothingArmorRoyal]
   id: RMCArmorRoyal
   name: бронежилет 'Кестрел'
   description: Налаштовувана персональна система бронезахисту, яку використовує Королівська морська піхота. # TODO: write new, legally distinct description
